@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bluecell Healthcare Solutions</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    window.onload = function() {
+      setTimeout(function(){
+        document.getElementById("splash").style.display = "none";
+        document.getElementById("main").style.display = "block";
+      }, 3000);
+    };
+  </script>
+</head>
+<body>
+  <div id="splash">
+    <h1>Welcome to Bluecell Healthcare Solutions</h1>
+  </div>
+  <div id="main" style="display:none;">
+    <header>
+      <img src="assets/logo.png" alt="Bluecell Logo" class="logo" />
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="support.html">Support</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <h2>Delivering Diagnostics, Pharmaceuticals, and Veterinary Solutions</h2>
+      <p>Bluecell Healthcare Solutions is committed to excellence in service and innovation in healthcare delivery.</p>
+    </main>
+  </div>
+</body>
+</html>

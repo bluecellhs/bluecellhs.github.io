@@ -1,0 +1,7 @@
+
+body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 0; }
+header { background: #005a87; color: white; padding: 10px; text-align: center; }
+header a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+.logo { max-height: 60px; }
+main, form { padding: 20px; }
+#splash { text-align: center; padding: 100px; font-size: 24px; background: #e0f0ff; }
