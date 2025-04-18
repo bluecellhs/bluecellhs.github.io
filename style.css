@@ -1,7 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', serif;
+  background: url("assets/old-paper.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
 
-body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 0; }
-header { background: #005a87; color: white; padding: 10px; text-align: center; }
-header a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-.logo { max-height: 60px; }
-main, form { padding: 20px; }
-#splash { text-align: center; padding: 100px; font-size: 24px; background: #e0f0ff; }
+/* Splash screen styling */
+#splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("assets/old-paper.jpg") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 2s ease-in-out;
+}
+
+#splash.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#splash img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+#splash h1 {
+  font-size: 28px;
+  color: #3d2b1f;
+  text-align: center;
+  line-height: 1.4;
+  white-space: pre-line;
+}
+
+/* Optional page fade-in */
+body.loaded {
+  animation: fadeIn 1s ease-in forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
